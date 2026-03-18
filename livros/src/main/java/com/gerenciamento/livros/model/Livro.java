@@ -1,8 +1,6 @@
 package com.gerenciamento.livros.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
@@ -10,6 +8,8 @@ import java.util.Objects;
 @Table(name = "tb_livro")
 public class Livro {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "titulo_livro")
     private String titulo;
