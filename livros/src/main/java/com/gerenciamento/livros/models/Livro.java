@@ -1,4 +1,4 @@
-package com.gerenciamento.livros.model;
+package com.gerenciamento.livros.models;
 
 import jakarta.persistence.*;
 
